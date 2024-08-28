@@ -1,0 +1,34 @@
+package AtividadeJava;
+
+	import java.util.Scanner;
+
+	public class Atividade {
+	    public static void main(String[] args) {
+	      
+	        String senhaCorreta = "123123";
+	        Scanner scanner = new Scanner(System.in);
+	        String senha;
+
+	        
+	        while (true) {
+	            System.out.print("Digite a senha: ");
+	            senha = scanner.nextLine();
+	            
+	       
+	            if (senha.equals(senhaCorreta)) {
+	                System.out.println("Senha correta! Acesso permitido.");
+	                break; // Sai do loop se a senha estiver correta
+	            } else {
+	                System.out.println("Senha incorreta. Tente novamente.");
+	            }
+	        }
+	        
+	        scanner.close();
+	    }
+	}
+
+	
+
+
+	
+	
